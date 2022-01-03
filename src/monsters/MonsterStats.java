@@ -13,6 +13,10 @@ public class MonsterStats {
         this.hp = hp;
     }
 
+    public MonsterStats() {
+
+    }
+
     public Integer getStr() {
         return str;
     }
@@ -43,5 +47,37 @@ public class MonsterStats {
 
     public void setHp(Integer hp) {
         this.hp = hp;
+    }
+
+    public Integer increaseStr(Integer modifier){
+        return this.str = this.str + modifier;
+    }
+
+    public Integer decreaseStr(Integer modifier){
+        return this.str = this.str - modifier;
+    }
+
+    public Integer increaseDef(Integer modifier){
+        return this.def = this.def + modifier;
+    }
+
+    public Integer decreaseDef(Integer modifier){
+        return this.def = this.def - modifier;
+    }
+
+    public Integer increaseAgl(Integer modifier){
+        return this.agl = this.agl + modifier;
+    }
+
+    public Integer decreaseAgl(Integer modifier){
+        return this.agl = this.agl - modifier;
+    }
+
+    public Integer increaseHp(Integer modifier){
+        return this.hp = this.hp + modifier;
+    }
+
+    public Integer decreaseHp(Integer modifier){
+        return this.hp = this.hp - modifier;
     }
 }

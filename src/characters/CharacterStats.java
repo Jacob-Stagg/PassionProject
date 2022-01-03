@@ -15,6 +15,10 @@ public class CharacterStats {
         this.hp = hp;
     }
 
+    public CharacterStats() {
+
+    }
+
     public Integer getStr() {
         return str;
     }
@@ -53,5 +57,45 @@ public class CharacterStats {
 
     public void setHp(Integer hp) {
         this.hp = hp;
+    }
+
+    public Integer increaseStr(Integer modifier){
+        return this.str = this.str + modifier;
+    }
+
+    public Integer decreaseStr(Integer modifier){
+        return this.str = this.str - modifier;
+    }
+
+    public Integer increaseDef(Integer modifier){
+        return this.def = this.def + modifier;
+    }
+
+    public Integer decreaseDef(Integer modifier){
+        return this.def = this.def - modifier;
+    }
+
+    public Integer increaseMana(Integer modifier){
+        return this.mana = this.mana + modifier;
+    }
+
+    public Integer decreaseMana(Integer modifier){
+        return this.mana = this.mana - modifier;
+    }
+
+    public Integer increaseAgl(Integer modifier){
+        return this.agl = this.agl + modifier;
+    }
+
+    public Integer decreaseAgl(Integer modifier){
+        return this.agl = this.agl - modifier;
+    }
+
+    public Integer increaseHp(Integer modifier){
+        return this.hp = this.hp + modifier;
+    }
+
+    public Integer decreaseHp(Integer modifier){
+        return this.hp = this.hp - modifier;
     }
 }
